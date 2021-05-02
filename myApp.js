@@ -7,10 +7,10 @@ const Schema = mongoose.Schema;
 const personSchema = new Schema({
   name: { type: String, required: true },
   age: Number,
-  favouriteFoods: [String]
+  favoriteFoods: [String]
 });
 
-const Person = mongoose.model("Person", personSchema);
+const Person = mongoose.model('Person', personSchema);
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
