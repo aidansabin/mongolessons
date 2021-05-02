@@ -18,10 +18,10 @@ const createAndSavePerson = (done) => {
     age: 22,
     favoriteFoods: ['pizza', 'chocolate', 'burgers']
   });
-  aidanSabin.save(err, data) {
+  aidanSabin.save(function(err, data) {
     if (err) return console.error(err);
     done(null, data);
-  }
+  });
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
